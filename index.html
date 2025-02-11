@@ -3,34 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <button class="operator" onclick="clearDisplay()">C</button>
-            <button class="operator" onclick="appendValue('/')">/</button>
-            <button class="operator" onclick="appendValue('*')">*</button>
-            <button class="operator" onclick="appendValue('-')">-</button>
-            <button onclick="appendValue('7')">7</button>
-            <button onclick="appendValue('8')">8</button>
-            <button onclick="appendValue('9')">9</button>
-            <button class="operator" onclick="appendValue('+')">+</button>
-            <button onclick="appendValue('4')">4</button>
-            <button onclick="appendValue('5')">5</button>
-            <button onclick="appendValue('6')">6</button>
-            <button class="equal" onclick="calculate()">=</button>
-            <button onclick="appendValue('1')">1</button>
-            <button onclick="appendValue('2')">2</button>
-            <button onclick="appendValue('3')">3</button>
-            <button onclick="appendValue('.')">.</button>
-            <button onclick="appendValue('0')">0</button>
-            <button onclick="appendValue('00')">00</button>
-            
+    <h1>Image Gallery</h1>
+    <h3>The Avengers Theme</h3>
+    <div class="gallery-wrap">
+        <img src="image/back.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="image/1.jpg"></span>
+                <span><img src="image/2.jpg"></span>
+                <span><img src="image/3.jpg"></span>
+            </div>
+            <div>
+                <span><img src="image/4.jpg"></span>
+                <span><img src="image/5.jpg"></span>
+                <span><img src="image/6.jpg"></span>
+            </div>
         </div>
+        <img src="image/next.png" id="nextBtn">
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
